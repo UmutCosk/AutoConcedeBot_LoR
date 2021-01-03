@@ -12,7 +12,7 @@ from pyautogui import press
 width= 1366
 height= 768
 first_winning_account = True # Make this False for other account 
-have_registered_riot_account = True
+
 
 # Init
 keyboard = KeyboardController()
@@ -53,11 +53,6 @@ def clickSurrender():
     time.sleep(0.1)
     mouse.click(Button.left, 1)
 
-def clickSurrenderNoRiot():
-    mouse.position = applyRatio(0.34,0.83)
-    time.sleep(0.1)
-    mouse.click(Button.left, 1)
-
 def clickOK():
     mouse.position = applyRatio(0.57,0.56)
     time.sleep(0.1)
@@ -80,10 +75,7 @@ while(True):
         time.sleep(28)
         clickSetting()
         time.sleep(1)
-        if(have_registered_riot_account):
-            clickSurrender()
-        else:
-            clickSurrenderNoRiot()
+        clickSurrender()
         time.sleep(1)
         clickOK()
         time.sleep(15)
