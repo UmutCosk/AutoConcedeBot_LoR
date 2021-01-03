@@ -8,9 +8,8 @@ from pyautogui import press
 
 
 # Variables that you might have to change
-
-width= 1366
-height= 768
+width= 1920
+height= 1080
 first_winning_account = True # Make this False for other account 
 
 
@@ -72,13 +71,13 @@ while(True):
         clickDeck()
         time.sleep(1)
         clickReady()
-        time.sleep(28)
+        time.sleep(23)
         clickSetting()
         time.sleep(1)
         clickSurrender()
         time.sleep(1)
         clickOK()
-        time.sleep(15)
+        time.sleep(18)
         clickContinue()
         time.sleep(3)
         counter = counter + 1 
@@ -86,10 +85,10 @@ while(True):
         clickDeck()
         time.sleep(1)
         clickReady()
-        time.sleep(28)
+        time.sleep(23)
         time.sleep(1)
         time.sleep(1)
-        time.sleep(15)
+        time.sleep(18)
         clickContinue()
         time.sleep(3)
         counter = counter + 1 
