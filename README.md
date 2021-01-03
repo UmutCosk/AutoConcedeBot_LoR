@@ -10,5 +10,6 @@ Setup:
 Note:
 -Make sure you start both scripts at the same time
 -Your resolution needs to have a ratio of 1.77 like for example 1920x1080 or 1366x768
+-If you change the delay values, then make sure both winning / loosing phase (if/else statements) delays add up to the same value.
 
 
