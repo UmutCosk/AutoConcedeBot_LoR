@@ -11,7 +11,7 @@ from pyautogui import press
 
 width= 1366
 height= 768
-first_winning_account = False # Make this False for other account 
+first_winning_account = True # Make this False for other account 
 have_registered_riot_account = True
 
 # Init
