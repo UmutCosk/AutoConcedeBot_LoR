@@ -9,20 +9,18 @@ from pyautogui import press
 
 # Variables that you might have to change
 
-width= 1920
-height= 1080
-first_winning_account = True
+width= 1366
+height= 768
+first_winning_account = True # Make this False for other account 
 have_registered_riot_account = True
 
 # Init
 keyboard = KeyboardController()
 mouse = MouseController()
-init_waiting = True
-
 
 def clickMouse(x, y):
     mouse.position = (x, y)
-    sleep(1,2)
+    time.sleep(1,2)
     mouse.click(Button.left, 1)
 
 def getCurrentMousePosition():
@@ -60,12 +58,12 @@ def clickSurrenderNoRiot():
     time.sleep(0.1)
     mouse.click(Button.left, 1)
 
-def clickOK(x, y):
+def clickOK():
     mouse.position = applyRatio(0.57,0.56)
     time.sleep(0.1)
     mouse.click(Button.left, 1)
 
-def clickContinue(x, y):
+def clickContinue():
     mouse.position = applyRatio(0.66,0.90)
     time.sleep(0.1)
     mouse.click(Button.left, 1)
